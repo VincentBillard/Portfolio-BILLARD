@@ -16,6 +16,7 @@ $(document).ready(function(){
 	console.log($navulli);
 
 	$a.click(function(){
+		$(this).css('background-color','red');
 		alert( "Handler for .click() called.");
 	});
 
@@ -25,6 +26,8 @@ $(document).ready(function(){
 		console.log($intro.css('color'));
 		$navulli.html('');
 	});
+
+
 
 
 });
