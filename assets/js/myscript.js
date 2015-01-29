@@ -1,6 +1,4 @@
-$(document).ready(function(){
-
-	alert("document is ready");
+/*<$(document).ready(function(){
 
 	var variable = 'test';
 	console.log(variable);
@@ -22,12 +20,4 @@ $(document).ready(function(){
 
 	$intro.css('color', 'red');
 
-	$slider.click(function(){
-		console.log($intro.css('color'));
-		$navulli.html('');
-	});
-
-
-
-
-});
+});*/
