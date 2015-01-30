@@ -1,68 +1,81 @@
 <html>
 	<head>
-		<title>Portfolio Web Developper</title>
+		<link rel="icon" type="image/png" href="assets/img/logo-blanc.png" />
+		<title>Vincent Billard Web Developper</title>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
 		<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-		<script src="assets/js/modernizr.custom.js"></script>
+		
 	</head>
+
 	<body>
-		<div id="container" class="container">
-			<div class="main clearfix">
-		<nav id="menu" class="nav">					
-			<ul>
-				<li>
-					<a href="#" class="icon onglet-menu-toggle">
-						<img src="assets/img/logo.png" height="90%" class="icon-accueil">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon"> 
-							<i class="fa fa-child icon-competences"></i>
-						</span>
-						<span>Compétences</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon">
-							<i aria-hidden="true" class="icon-experiences"></i>
-						</span>
-						<span>Expériences</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon">
-							<i aria-hidden="true" class="icon-formations"></i>
-						</span>
-						<span>Formations</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon">
-							<i aria-hidden="true" class="icon-divers"></i>
-						</span>
-						<span>Divers</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="icon">
-							<i class="fa fa-envelope-o icon-contact"></i>
-						</span>
-						<span>Contact</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	
+		<header>
+			<div id="container" class="container">
+				<div class="main clearfix">
+					<nav id="menu" class="nav">					
+						<ul>
+							<li>
+								<a href="#" class="icon onglet-menu-toggle">
+									<img src="assets/img/logo.png" height="90%" class="icon-accueil">
+								</a>
+							</li>
+							<li>
+								<a href="#competences">
+									<span class="icon"> 
+										<i class="fa fa-area-chart"></i>
+									</span>
+									<span>Compétences</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="icon">
+										<i aria-hidden="true" class="fa fa-newspaper-o"></i>
+									</span>
+									<span>Expériences</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="icon">
+										<i aria-hidden="true" class="fa fa-keyboard-o"></i>
+									</span>
+									<span>Formations</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="icon">
+										<i aria-hidden="true" class="fa fa-users"></i>
+									</span>
+									<span>Divers</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="icon">
+										<i class="fa fa-envelope-o icon-contact"></i>
+									</span>
+									<span>Contact</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<section class="row section" id="competences">
+					<div class="row-content buffer even clear-after">
+						<div class="section-title"><h3>Comptétences</h3></div>
+						<p class="centertxt">I’m an experienced and passionate user interface designer with interaction design background.<br>My goal is to make the world wide web a better place by designing beautiful user experiences, one site at a time.</p>
+						
+					</div>	
+				</section>
 			<!--<header>
 				<h1>Vincent BILLARD</h1>
 				<nav>
@@ -99,39 +112,40 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum lacus in posuere vehicula. Nulla pretium posuere tincidunt. Nullam at sem magna. Maecenas ligula ligula, faucibus sed malesuada rhoncus, tincidunt at risus. Sed in erat sit amet nisl vehicula pharetra. Quisque ut viverra purus. Maecenas iaculis mi ac vulputate rhoncus. Curabitur libero velit, euismod ut ornare ac, viverra id eros. Sed arcu ante, lobortis quis purus non, sagittis bibendum libero. Praesent efficitur, nunc non scelerisque aliquet, neque dolor rutrum arcu, vitae efficitur lacus leo eget ipsum. Pellentesque sodales a est ac aliquam. Nam tortor turpis, sagittis ac mauris nec, consequat hendrerit orci. Cras varius lacus purus, in vulputate enim volutpat ut. Quisque elementum sodales enim commodo tincidunt. Cras malesuada hendrerit feugiat.</p>
 				</article>
 			</section>-->
-		</div>
+		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 		<script src="assets/js/myscript.js"></script>
+		<script src="assets/js/modernizr.custom.js"></script>
 
 
 		<script>
-	//  Changement de class
-	var changeClass = function (r,className1,className2) {
-		var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
-		if( regex.test(r.className) ) {
-			r.className = r.className.replace(regex,' '+className2+' ');
-	    }
-	    else{
-			r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
-	    }
-	    return r.className;
-	};	
-	//  Creation du bouton pour écran plus petit
-	var menuElements = document.getElementById('menu');
-	menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
-	//  Affichage / fermeture du menu
-	document.getElementById('menutoggle').onclick = function() {
-	changeClass(this, 'navtoogle active', 'navtoogle');
-		}
-	
-	document.onclick = function(e) {
-		var mobileButton = document.getElementById('menutoggle'),
-			buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
-			if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
-			changeClass(mobileButton, 'navtoogle active', 'navtoogle');
-		}
-	}
-</script>
+			//  Java pour le menu burger
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+			//  Creation du bouton pour écran plus petit
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+			//  Affichage / fermeture du menu
+			document.getElementById('menutoggle').onclick = function() {
+			changeClass(this, 'navtoogle active', 'navtoogle');
+				}
+			
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+					if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
 	</body>
 </html>
 
