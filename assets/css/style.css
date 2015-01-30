@@ -2,13 +2,25 @@ body {
 	color: #89867e;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
-h1{
-	font-size: 25px;
+h1.intro{
+	font-size: 5em;
+	font-family: "avant-garde",sans-serif;
+	font-weight: normal;
+	letter-spacing: -2px;
+	line-height: 0.8em;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	
 }
 h3{
 	font-style: bold;
 	font-size: 20px;
-	/*color:red;*/
+}
+span.vert{
+	color: #057F37;
+}
+span.bleu{
+	color: #166BA2;
 }
 img{
 	max-width: 100%;
