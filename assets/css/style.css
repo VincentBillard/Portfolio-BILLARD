@@ -2,15 +2,33 @@ body {
 	color: #89867e;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 }
+header{
+	height: 200px;
+
+}
 h1.intro{
 	font-size: 5em;
 	font-family: "avant-garde",sans-serif;
-	font-weight: normal;
+	font-weight: 700;
 	letter-spacing: -2px;
 	line-height: 0.8em;
 	margin-bottom: 20px;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
+}
+@media(max-width: 700px){
+	h1.intro{
+		font-size: 4em;
+	}
+}
+@media(max-width: 550px){
+	h1.intro{
+		font-size: 3em;
+	}
+}
+@media(max-width: 420px){
+	h1.intro{
+		font-size: 2em;
+	}
 }
 h3{
 	font-style: bold;
@@ -22,6 +40,10 @@ span.vert{
 span.bleu{
 	color: #166BA2;
 }
+a:hover{
+	text-decoration:none;
+	color: blue;
+}
 img{
 	max-width: 100%;
 }
@@ -31,24 +53,12 @@ img{
 	margin : auto;
 	color: #000;
 }
-/*header{
-	text-align: center;
-}
-header nav ul{
-	margin: 0;
-	padding: 0;
-	margin-bottom: 20px;
-}/*
-header nav ul li{
-	display: inline-block;
-	margin-right: 10px;
-}
-header nav ul li a{
-	text-decoration: none;
-	color: red;
-}*/
 section{
 	text-align: center;
+	width: 80%;
+	padding: 20px;
+	margin: 0 auto;
+
 }
 section article
 {
@@ -56,44 +66,23 @@ section article
 	padding: 0 10px;
 	width: 250px;
 }
-/*@media screen and (max-width : 769px)
-{
-	#container
-	{
-		width: 100%;
-		font-size: 90%;
-		}
-		article {
-			text-align: left;
-		}
-		article img {
-			max-width: 120px;
-			display: block;
-			float:left;
-			margin-top: 10px;
-		}
-		p {
-			display: none;
-		}
-		.into {
-			display:block;
-			padding-left: 70px;
-			clear: right;
-			max-height: 60px;
-			overflow: hidden;
-		}
-		h3 {
-			display: inline;
-			padding-left: 10px;
-		}
-		}
-		@media screen and (max-width : 320px)
-		{
-		article img {
-			max-width: 60px;
-		}
-			header nav ul li{
-			display: block;
-			margin-right: 10px;
-	}
-}*/
+#competences{
+	background-color: #1E8C4B;
+	color: white;
+}
+#experiences{
+	background-color: #2E9CC5;
+	color: white;
+}
+#formations{
+	background-color: #2E7AAB;
+	color: white;
+}
+#divers{
+	background-color: #324A5A;
+	color: white;
+}
+#contact{
+	background-color: #2D3E4A;
+	color: white;
+}
