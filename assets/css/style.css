@@ -30,10 +30,14 @@ h1.intro{
 		font-size: 2em;
 	}
 }
+.clear{clear:both;}
+.pad-top{padding-top:4px;}
 h3{
 	font-style: bold;
 	font-size: 20px;
 }
+/*h4{line-height: 0.5;}*/
+
 span.vert{
 	color: #057F37;
 }
@@ -42,22 +46,21 @@ span.bleu{
 }
 a:hover{
 	text-decoration:none;
-	color: blue;
 }
 img{
 	max-width: 100%;
 }
 #container
 {
-	
 	margin : auto;
 	color: #000;
 }
 section{
 	text-align: center;
 	width: 80%;
-	padding: 20px;
-	margin: 0 auto;
+	padding: 40px;
+	margin: 20px auto;
+	border-radius: 10px;
 
 }
 section article
@@ -66,22 +69,68 @@ section article
 	padding: 0 10px;
 	width: 250px;
 }
+#intro a, #contact a {
+	background-color:#89867E;
+	border-radius: 5px;
+	padding:10px 15px;
+	color:white;
+	font-weight: 700;
+}
+#intro a:hover, #contact a:hover {
+	color:black;
+}
 #competences{
+	margin-top:30px;
 	background-color: #1E8C4B;
 	color: white;
 }
 #experiences{
 	background-color: #2E9CC5;
 	color: white;
+	height: 70%;
+	
 }
+#experiences ul{text-align: left !important; list-style: none;}
+#experiences .gauche{float:left; width: 20%;}
+#experiences .droite{float: left; width: 80%;}
+
+#formations ul{text-align: left !important; list-style: none;}
+#formations .gauche{float:left; width: 20%;}
+#formations .droite{float: left; width: 80%;}
+
+
 #formations{
 	background-color: #2E7AAB;
 	color: white;
+	height: 70%;
 }
 #divers{
 	background-color: #324A5A;
 	color: white;
+	margin:0 auto;
+	height: 60%;
 }
+/*#divers .liste-divers{text-align: center !important; margin: 0 auto !important; width: 33%;}*/
+#divers ul { list-style: none;}
+#divers ul li{float: left; margin-right: 50px;}
+/*#divers ul li {list-style: none; float: left;  margin-right: 60px; text-align: left; width: 80px;}
+#divers ul li:first-child { clear: left; }*/
+@media(max-width: 630px){
+	#divers{
+		height: 70%;
+	}
+}
+@media(max-width: 480px){
+	#divers{
+		height: 80%;
+	}
+}
+@media(max-width: 450px){
+	#divers{
+		height: 120%;
+	}
+}
+
 #contact{
 	background-color: #2D3E4A;
 	color: white;
