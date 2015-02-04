@@ -87,11 +87,32 @@ section article
 #experiences{
 	background-color: #2E9CC5;
 	color: white;
-	height: 70%;
+	height: 120%;
 	
 }
+@media(max-width: 1200px){
+	#experiences{
+		height: 140%;
+	}
+}
+@media(max-width: 940px){
+	#experiences{
+		height: 162%;
+	}
+}
+@media(max-width: 774px){
+	#experiences{
+		height: 280%;
+	}
+}
+
+@media(max-width: 670px){
+	#experiences{
+		height: 300%;
+	}
+}
 #experiences ul{text-align: left !important; list-style: none;}
-#experiences .gauche{float:left; width: 20%;}
+#experiences .gauche{float:left; width: 20%; min-width: 100px;}
 #experiences .droite{float: left; width: 80%;}
 
 #formations ul{text-align: left !important; list-style: none;}
@@ -135,3 +156,4 @@ section article
 	background-color: #2D3E4A;
 	color: white;
 }
+.nav {position: relative; z-index: 10;}
