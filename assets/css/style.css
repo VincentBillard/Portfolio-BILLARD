@@ -88,7 +88,9 @@ section article
 	background-color: #2E9CC5;
 	color: white;
 	height: 120%;
-	
+}
+#formations{
+	height: 100% !important;
 }
 @media(max-width: 1200px){
 	#experiences{
@@ -111,12 +113,44 @@ section article
 		height: 300%;
 	}
 }
+
+@media(max-width: 585px){
+	#experiences{
+		height: 340%;
+	}
+	#formations{
+		height: 120% !important;
+	}
+}
+
+@media(max-width: 500px){
+	#experiences{
+		height: 380%;
+	}
+	#formations{
+		height: 200%;}
+}
+
+@media(max-width: 445px){
+	#experiences{
+		height: 420%;
+	}
+}
+
+@media(max-width: 408px){
+	#experiences{
+		height: 460%;
+	}
+	#formations{
+		height: 130% !important;
+	}
+}
 #experiences ul{text-align: left !important; list-style: none;}
 #experiences .gauche{float:left; width: 20%; min-width: 100px;}
 #experiences .droite{float: left; width: 80%;}
 
 #formations ul{text-align: left !important; list-style: none;}
-#formations .gauche{float:left; width: 20%;}
+#formations .gauche{float:left; width: 20%; min-width: 100px;}
 #formations .droite{float: left; width: 80%;}
 
 
